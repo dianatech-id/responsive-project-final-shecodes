@@ -1,0 +1,265 @@
+:root {
+  --primary-color: #885df1;
+  --secondary-color: #e1d7f0;
+  --font-color: #f1e8ee;
+  --theme-color: #270653;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 45px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 70px;
+  color: var(--theme-color);
+}
+h5 {
+  font-weight: bold;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+a {
+  color: var(--primary-color);
+}
+h3 {
+  font-size: 27px;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+h6 {
+  color: var(--theme-color);
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+}
+.information a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+p {
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.dark-link {
+  padding: 15px 30px;
+  color: white;
+  background: var(--primary-color);
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+  transition: all 100ms ease-in-out;
+}
+
+.dark-link:hover {
+  color: var(--primary-color);
+  background: white;
+}
+
+.about {
+  padding: 15px 30px;
+  color: var(--primary-color);
+  background: white;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+  font-size: 18px;
+  line-height: 27px;
+  transition: all 100ms ease-in-out;
+}
+
+.about:hover {
+  color: white;
+  background: var(--primary-color);
+}
+
+.text {
+  display: flex;
+  margin: 30px 0;
+}
+
+.text p {
+  margin: 10px;
+}
+
+.mail {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.email {
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  background: var(--font-color);
+  padding: 130px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  font-size: 80px;
+}
+
+.content-container {
+  padding: 100px 30px;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.content h2 {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.content p {
+  font-size: 16px;
+}
+
+.content {
+  margin: 30px;
+}
+
+nav {
+  padding: 10px 50px;
+  background: white;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  line-height: 42px;
+  transition: all 100ms ease-in-out;
+  color: rgb(80, 79, 79);
+  font-weight: bold;
+}
+
+nav a:hover,
+nav li.active a {
+  color: #885df1;
+  font-weight: bold;
+}
+
+.contact-me {
+  color: var(--primary-color);
+}
+
+.work {
+  font-size: 48px;
+  color: black;
+  opacity: 1;
+  font-family: var(--heading-font-family);
+}
+
+.final-letter {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--font-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--primary-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--primary-color);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  .content {
+    text-align: center;
+    padding: 10px;
+  }
+  nav {
+    padding: 15px 0;
+  }
+  nav li {
+    margin-left: 50px;
+  }
+}
